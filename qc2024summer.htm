@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <script type="module" src="https://js.withorbit.com/orbit-web-component.js"></script>
+  </head>
+  <body>
+    <orbit-reviewarea color="brown">
+      <orbit-prompt
+        question="What does the Hadamard gate do to $|0\rangle$?"
+        answer="$$|0\rangle\rightarrow \frac{|0\rangle+|1\rangle}{\sqrt{2}}$$"
+      ></orbit-prompt>
+      <orbit-prompt
+        question="What kind of quantum gate is this?"
+        question-attachments="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CNOT_gate.svg/1280px-CNOT_gate.svg.png"
+        answer="CNOT gate."
+      ></orbit-prompt>
+      <orbit-prompt
+        question="Why can't a circuit such as XOR gate not possible in quantum computing?"
+        question-attachments="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Xor-gate-en.svg/800px-Xor-gate-en.svg.png"
+        answer="Because quantum mechanics is invertible (XOR gate loses information.)"
+      ></orbit-prompt>
+       <orbit-prompt
+        question="A gate that swaps qubit states using CNOT looks like..."
+answer=""
+        answer-attachments=
+"https://pennylane.ai/static/51a7a86b53b9abf0d6ba8827c2402108/f058b/making-a-swap-gate-from-cnot-gates.png"
+      ></orbit-prompt>
+<orbit-prompt
+        question="For $|\psi\rangle=a|0\rangle+b|1\rangle$,when can CNOT gate clone a state?"
+answer="when $|0\rangle$ or $|1\rangle$"
+      ></orbit-prompt>
+<orbit-prompt
+        question="What's the intuition of no-clone theorem?"
+answer="TO copy a state, youu first need to measure all the information of a given state, which destroys the state completely"
+      ></orbit-prompt>
+<orbit-prompt
+        question="What's the matrix representation for X (not) gate?"
+question-attachments=
+"https://upload.wikimedia.org/wikipedia/commons/4/43/Qcircuit_X.svg"
+answer="$$\left(\begin{array}{ll}
+0 & 1 \\
+1 & 0
+\end{array}\right)$$"
+      ></orbit-prompt>
+<orbit-prompt
+        question="What is the matrix representation for the Hadamard gate?"
+answer=""
+answer-attachments=
+"https://i0.wp.com/quantumzeitgeist.com/wp-content/uploads/Quantum_Logic_Gates.png-2443%C3%973003.png?resize=640%2C353&ssl=1"
+      ></orbit-prompt>
+<orbit-prompt
+        question="How does the notation of the final target state $x \oplus y$ makes sense?"
+question-attachments="https://upload.wikimedia.org/wikipedia/commons/5/58/Cnot-compared-to-xor.svg"
+answer="Because $|1 \oplus 0\rangle=1$, target qubit flips when the control qubit is 1"
+      ></orbit-prompt>
+<orbit-prompt
+        question="What is the matrix representation for CNOT gate?"
+question-attachments=
+"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CNOT_gate.svg/1280px-CNOT_gate.svg.png"
+answer="CNOT"
+answer-attachments="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrpSgpUZI2csn4_UgnVO5wrBVGKQm6cQGTKyEQGVbaWxIsfuG3H2iFDU4ELvySO-iM7A&usqp=CAUT"
+      ></orbit-prompt>
+<orbit-prompt
+        question="Why should the matrix representation for CNOT gate look like this?"
+question-attachments=
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrpSgpUZI2csn4_UgnVO5wrBVGKQm6cQGTKyEQGVbaWxIsfuG3H2iFDU4ELvySO-iM7A&usqp=CAU"
+answer="Because it's a combination of identity and not operation"
+answer-attachments="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/95851i4085398AE2B60B1C"
+      ></orbit-prompt>
+    </orbit-reviewarea>
+  </body>
+</html>
